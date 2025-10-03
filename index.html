@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.S.S.VENKATESH - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="cyber-bg">
+        <div class="grid-lines"></div>
+        <canvas id="matrix-canvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo glitch" data-text="<DEV/>">
+                <span>&lt;Portfoilo&gt;</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                </div>
+                <div class="terminal-body">
+                    <p class="terminal-text">
+                        <span class="prompt">visitor@portfolio:~$</span> 
+                        <span class="command">whoami ?</span>
+                    </p>
+                    <h1 class="glitch-text" data-text="YOUR NAME">S.S.S.VENKATESH</h1>
+                    <p class="terminal-text">
+                        <span class="prompt">visitor@portfolio:~$</span> 
+                        <span class="command">cat role.txt</span>
+                    </p>
+                    <div class="typing-container">
+                        <h2 class="typing-text" id="typing-text"></h2>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="tagline">Learning one concept at a time</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Contact Me</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title glitch" data-text="ABOUT_ME.exe">
+                <span>ABOUT_ME.exe</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="scan-line"></div>
+                        <img src="imgs/photo_6113939057877829519_y.jpg" alt="Profile" id="profile-img">
+                        <div class="corner tl"></div>
+                        <div class="corner tr"></div>
+                        <div class="corner bl"></div>
+                        <div class="corner br"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="info-card">
+                        <div class="card-header">
+                            <span class="status-dot"></span>
+                            <span>STATUS: ONLINE</span>
+                        </div>
+                        <p class="about-description">
+                            Hello! I'm a passionate developer with a love for creating innovative solutions 
+                            and pushing the boundaries of technology. My journey in tech began with curiosity 
+                            and has evolved into a mission to build meaningful digital experiences,Cyber Security exites me.
+                        </p>
+                        <p class="about-description">
+                            I have experince in building websites using HTML,CSS,JS with expertise in Java and 
+                            other technologies. When I'm not coding, you'll find me exploring new tech trends  
+                            on Cyber Security , or gaming in virtual worlds.
+                        </p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="50">5</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="100">3rd</span>
+                                <span class="stat-label">Current Year</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="24">10</span>
+                                <span class="stat-label">Technologies Mastered</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title glitch" data-text="SKILLS.db">
+                <span>SKILLS.db</span>
+            </h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>HTML5</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>JavaScript </span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>CSS3</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Backend</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Java / JSP</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>MySql</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Tools & Others</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Git / GitHub</span>
+                            <span class="skill-percentage">60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="60"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Linux Commands</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Wireshark / Burpsuite</span>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="70"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title glitch" data-text="PROJECTS.json">
+                <span>PROJECTS.json</span>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="imgs/1_0.jpeg" alt="Project 1">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                
+                                <a href="https://github.com/S-Venky-06/Socail_Engg_simul" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Social Enginnering Simulator</h3>
+                        <p class="project-description">
+                            A Python-based project featuring multiple components including web servers, 
+                            a GUI simulator, email sending functionality, and template-based operations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tkinter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="imgs/2_0.png" alt="Project 2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                
+                                <a href="https://github.com/S-Venky-06/Student-Attendance-System-Using-QR-Code" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Student-Attendance-System-Using-QR-Code</h3>
+                        <p class="project-description">
+                            A web-based Student Attendance System which  
+                            allows students to register, mark attendance (via QR/barcode), 
+                            and enables administrators to view records—all in a dynamic, modern UI.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java / JSP</span>
+                            <span class="tech-tag">HTML / CSS</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="imgs/3_0.png" alt="Project 3">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                
+                                <a href="https://github.com/S-Venky-06/FINAL-SNAKE-GAME" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Snake Game</h3>
+                        <p class="project-description">
+                            Classic Snake Game mechanics with a fresh interface.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java / JSP</span>
+                            <span class="tech-tag">HTML / CSS</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="imgs/4_0.png" alt="Project 4">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://s-venky-06.github.io/Wheater_app/" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/S-Venky-06/Wheater_app" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Wheater app</h3>
+                        <p class="project-description">
+                            Well its in the name tells the wheater of the given location......
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML / CSS</span>
+                            <span class="tech-tag">Java Script</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="imgs/5_0.png" alt="Project 5">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://s-venky-06.github.io/Type_Game/" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/S-Venky-06/Type_Game" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Type Game</h3>
+                        <p class="project-description">
+                            Test Your Speeeed
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML / CSS</span>
+                            <span class="tech-tag">Java Script</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+
+        
+        
+        
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title glitch" data-text="CONTACT.sys">
+                <span>CONTACT.sys</span>
+            </h2>
+            <div class="contact-content-center">
+                <div class="contact-info">
+                    <div class="info-box">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p>venkysama333@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <h3>Location</h3>
+                            <p>Hyderabad, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links-wrapper">
+                        <h3 class="social-title">Connect With Me</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/S-Venky-06" class="social-link" title="GitHub">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/s-s-s-venkatesh-ab0859291/" class="social-link" title="LinkedIn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 S.S.S.Venkatesh. All rights reserved.</p>
+            <p class="footer-text">Designed & Built with <span class="heart">♥</span> inspired by CyberPunk 2077.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
