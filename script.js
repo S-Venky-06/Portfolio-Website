@@ -72,8 +72,8 @@ window.addEventListener('scroll', () => {
 // Scrool effect for typing
 const typingText = document.getElementById('typing-text');
 const roles = [
-    'Full Stack Developer',
-    'UI/UX Designer',
+    'Web Developer',
+    'Cyber Security enthusiastic',
     'Problem Solver',
     'Tech Enthusiast',
     'Creative Coder'
